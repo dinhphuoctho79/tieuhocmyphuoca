@@ -7,19 +7,155 @@
   "frames": [
     {
       "id": "main-2026",
-      "name": "Năm học mới 2026–2027",
+      "name": "Mặc định",
       "image": "assets/frames/main-2026.png",
       "thumbnail": "assets/thumbs/main-2026.webp",
       "active": true,
-      "safeArea": {
-        "x": 0.5,
-        "y": 0.47,
-        "radius": 0.3
-      },
       "photoMask": {
         "x": 0.5,
         "y": 0.47,
         "radius": 0.335
+      },
+      "safeArea": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "blue-2026",
+      "name": "Xanh dương",
+      "image": "assets/frames/blue-2026.png",
+      "thumbnail": "assets/thumbs/blue-2026.webp",
+      "active": true,
+      "photoMask": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.335
+      },
+      "safeArea": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "green-2026",
+      "name": "Xanh lá",
+      "image": "assets/frames/green-2026.png",
+      "thumbnail": "assets/thumbs/green-2026.webp",
+      "active": true,
+      "photoMask": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.335
+      },
+      "safeArea": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "red-2026",
+      "name": "Đỏ",
+      "image": "assets/frames/red-2026.png",
+      "thumbnail": "assets/thumbs/red-2026.webp",
+      "active": true,
+      "photoMask": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.335
+      },
+      "safeArea": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "purple-2026",
+      "name": "Tím",
+      "image": "assets/frames/purple-2026.png",
+      "thumbnail": "assets/thumbs/purple-2026.webp",
+      "active": true,
+      "photoMask": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.335
+      },
+      "safeArea": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "orange-2026",
+      "name": "Cam",
+      "image": "assets/frames/orange-2026.png",
+      "thumbnail": "assets/thumbs/orange-2026.webp",
+      "active": true,
+      "photoMask": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.335
+      },
+      "safeArea": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "pink-2026",
+      "name": "Hồng",
+      "image": "assets/frames/pink-2026.png",
+      "thumbnail": "assets/thumbs/pink-2026.webp",
+      "active": true,
+      "photoMask": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.335
+      },
+      "safeArea": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "gold-2026",
+      "name": "Vàng",
+      "image": "assets/frames/gold-2026.png",
+      "thumbnail": "assets/thumbs/gold-2026.webp",
+      "active": true,
+      "photoMask": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.335
+      },
+      "safeArea": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.3
+      }
+    },
+    {
+      "id": "cyan-2026",
+      "name": "Xanh ngọc",
+      "image": "assets/frames/cyan-2026.png",
+      "thumbnail": "assets/thumbs/cyan-2026.webp",
+      "active": true,
+      "photoMask": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.335
+      },
+      "safeArea": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.3
       }
     }
   ]

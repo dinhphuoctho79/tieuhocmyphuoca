@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b63ce">
+  <meta name="description" content="Tạo khung ảnh đại diện hưởng ứng phong trào - Trường Tiểu học Mỹ Phước A">
+  <link rel="preload" href="assets/logo.png" as="image">
+  <link rel="stylesheet" href="assets/app.css">
+  <title>Khung avatar - Trường Tiểu học Mỹ Phước A</title>
+</head>
+<body>
+  <main class="shell">
+    <header class="brand">
+      <img src="assets/logo.png" width="56" height="56" alt="Logo trường">
+      <div>
+        <h1 id="schoolName">TRƯỜNG TIỂU HỌC MỸ PHƯỚC A</h1>
+        <p id="ownerName">ỦY BAN NHÂN DÂN XÃ MỸ PHƯỚC · THÀNH PHỐ CẦN THƠ</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="card-head">
+        <div>
+          <strong id="campaignName">Khung avatar hưởng ứng phong trào</strong>
+          <small>Ảnh xử lý ngay trên thiết bị</small>
+        </div>
+        <button id="helpBtn" class="ghost small">Hướng dẫn</button>
+      </div>
+
+      <div class="canvas-box" id="canvasBox">
+        <canvas id="canvas" width="768" height="768"></canvas>
+        <div class="empty" id="emptyState">
+          <button id="chooseBtn" class="primary">Chọn ảnh</button>
+          <span>hoặc kéo ảnh vào đây</span>
+        </div>
+      </div>
+
+      <input id="fileInput" type="file" accept="image/*" hidden>
+      <input id="cameraInput" type="file" accept="image/*" capture="user" hidden>
+
+      <div class="quick">
+        <button id="cameraBtn">Camera</button>
+        <button data-action="cover">Lấp đầy</button>
+        <button data-action="center">Căn giữa</button>
+        <button data-action="flip">Lật ảnh</button>
+        <button data-action="reset">Đặt lại</button>
+      </div>
+
+      <p class="tip">Kéo để di chuyển · Chụm hai ngón để zoom · Xoay bằng hai ngón</p>
+    </section>
+
+    <section class="card frames-card">
+      <div class="section-title">
+        <strong>Chọn khung</strong>
+        <span id="frameCount"></span>
+      </div>
+      <div id="frameList" class="frame-list"></div>
+    </section>
+  </main>
+
+  <div class="bottom">
+    <button id="downloadBtn" class="primary big">Tải ảnh</button>
+    <button id="editBtn" class="ghost big">Tùy chỉnh</button>
+  </div>
+
+  <div id="backdrop" class="backdrop"></div>
+  <section id="sheet" class="sheet" aria-hidden="true">
+    <div class="grab"></div>
+    <div class="sheet-head">
+      <strong>Tùy chỉnh ảnh</strong>
+      <button id="closeSheet" class="ghost small">Đóng</button>
+    </div>
+
+    <label class="range-row">
+      <span>Phóng to <b id="zoomLabel">100%</b></span>
+      <input id="zoom" type="range" min="20" max="400" value="100">
+    </label>
+
+    <label class="range-row">
+      <span>Xoay <b id="rotateLabel">0°</b></span>
+      <input id="rotate" type="range" min="-180" max="180" value="0">
+    </label>
+
+    <label class="switch-row">
+      <span>Vùng an toàn Facebook</span>
+      <input id="safeToggle" type="checkbox" checked>
+    </label>
+
+    <div class="tool-grid">
+      <button data-action="contain">Vừa khung</button>
+      <button data-action="cover">Lấp đầy</button>
+      <button data-action="center">Căn giữa</button>
+      <button data-action="flip">Lật ngang</button>
+      <button data-action="rotate90">Xoay 90°</button>
+      <button data-action="reset">Đặt lại</button>
+    </div>
+
+    <div class="export-grid">
+      <button id="download1024">PNG 1024</button>
+      <button id="download2048">PNG 2048</button>
+      <button id="shareBtn">Chia sẻ</button>
+    </div>
+  </section>
+
+  <dialog id="helpDialog">
+    <h3>Hướng dẫn nhanh</h3>
+    <ol>
+      <li>Chọn ảnh hoặc mở camera.</li>
+      <li>Kéo, zoom và căn ảnh cho đẹp.</li>
+      <li>Chọn mẫu khung.</li>
+      <li>Bấm <b>Tải ảnh</b>, sau đó đổi ảnh đại diện Facebook.</li>
+    </ol>
+    <button id="closeHelp" class="primary">Đã hiểu</button>
+  </dialog>
+
+  <div id="toast" class="toast"></div>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

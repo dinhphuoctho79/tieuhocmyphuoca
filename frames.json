@@ -1,0 +1,21 @@
+{
+  "site": {
+    "school": "TRƯỜNG TIỂU HỌC MỸ PHƯỚC A",
+    "owner": "ỦY BAN NHÂN DÂN XÃ MỸ PHƯỚC · THÀNH PHỐ CẦN THƠ",
+    "campaign": "Khung avatar hưởng ứng phong trào"
+  },
+  "frames": [
+    {
+      "id": "main-2026",
+      "name": "Năm học mới 2026–2027",
+      "image": "assets/frames/main-2026.png",
+      "thumbnail": "assets/thumbs/main-2026.webp",
+      "active": true,
+      "safeArea": {
+        "x": 0.5,
+        "y": 0.47,
+        "radius": 0.3
+      }
+    }
+  ]
+}

@@ -79,6 +79,13 @@
 
     if (state.photo) {
       c.save();
+
+      // Chỉ cho ảnh người dùng hiển thị bên trong vòng tròn của khung.
+      const mask = state.frameMeta?.photoMask || { x:.5, y:.47, radius:.335 };
+      c.beginPath();
+      c.arc(mask.x * size, mask.y * size, mask.radius * size, 0, Math.PI * 2);
+      c.clip();
+
       c.translate(state.x * ratio, state.y * ratio);
       c.rotate(state.rotation);
       const s = state.scale * ratio;

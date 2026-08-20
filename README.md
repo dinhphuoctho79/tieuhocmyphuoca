@@ -25,3 +25,6 @@ Phiên bản tối ưu nhẹ, tải nhanh và dễ cài đặt cho các đợt h
 - Responsive
 
 Xem `INSTALL.md`.
+
+- Ảnh người dùng được cắt theo vòng tròn khung để không lộ mép ảnh chữ nhật.
+- Footer hiển thị thông tin tác giả ở chân trang web.
